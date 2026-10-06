@@ -1,66 +1,112 @@
 <!DOCTYPE html>
-<html lang="en,ar">
+<html lang="en">
 
 <head>
-    <title> ziad's page2 </title>    
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Ziad</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-   <header>
-    <h1> Welcome to my page </h1>
-   </header>
-     
-   <main>
-      <h3> Hello Everyone to my website </h3>
+    <header>
+        <h1>Ziad</h1>
 
-<h2> My courses</h2>
-<ol type = "i">
-    <li> <strong> java </strong>  </li>
-    <li> <strong> html</strong> </li>
-    <li> <strong> css </strong> </li>
-    <li> <strong> javascript </strong> </li>
-</ol>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-   <table border = "1">
-    <tr>
-        <th> id </th>
-        <th> name </th>
-        <th> city </th>
-    </tr>
-    <tr>
-        <th> 2327064 </th>
-        <th> ziad </th>
-        <th> cairo </th>
-    </tr>
-    <tr>
-        <th> 2327153 </th>
-        <th> omar </th>
-        <th> Giza </th>
-    </tr>
-    <tr>
-        <th> 2327026 </th>
-        <th> ahmed </th>
-        <th> cairo </th>
-    </tr>
-   </table>
+    <section>
 
-<br><br>
+        <h2>About Me</h2>
 
-     <a  target = "_blank" href = "www.facebook.com"> My Facebook </a>
-     <br>
-     <a  target = "_blank" href = "www.facebook.com"> My Emali </a>
-   </main>
+        <form>
 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
 
+            <br><br>
 
-   <footer>
-        <p> &copy; 2026 My Blog </p> 
-   </footer>
-       
-       
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+
+            <br><br>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+
+            <p>Gender:</p>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <br><br>
+
+            <p>My Interests:</p>
+
+            <input type="checkbox" id="programming" name="interest" value="programming">
+            <label for="programming">Programming</label>
+
+            <input type="checkbox" id="web" name="interest" value="web">
+            <label for="web">Web Development</label>
+
+            <input type="checkbox" id="database" name="interest" value="database">
+            <label for="database">Database</label>
+
+            <br><br>
+
+            <label for="course">Choose Your Course:</label>
+
+            <select id="course" name="course">
+                <option value="">Select a course</option>
+                <option value="java">Java</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="database">Database</option>
+                <option value="algorithm">Algorithm</option>
+                <option value="data-structure">Data Structure</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Tell Me About Yourself:</label>
+
+            <br>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="8"
+                cols="50"
+                placeholder="Write something about yourself..."></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ziad. All Rights Reserved.</p>
+    </footer>
+
 </body>
 
 </html>
