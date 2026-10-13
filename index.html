@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ziad's personal website and programming courses.">
+  <title>Ziad | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Ziad</a>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a class="active" aria-current="page" href="index.html">Home</a></li>
+        <li><a href="component.html">Components</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-control">
+      <input type="checkbox" id="theme-toggle">
+      <label for="theme-toggle">
+        <span class="switch" aria-hidden="true"></span>
+        <span>Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Hello, I'm Ziad</p>
+      <h1>Learning today. Building for tomorrow.</h1>
+      <p class="hero-text">
+        I'm learning programming and web development. This is where I share
+        the courses I'm studying and the skills I'm building.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#courses">See My Courses</a>
+        <a class="btn btn-outline" href="about.html">About Me</a>
+      </div>
+    </section>
+
+    <section class="content-section" id="courses" aria-labelledby="courses-title">
+      <div class="section-heading">
+        <p class="eyebrow">What I'm learning</p>
+        <h2 id="courses-title">My Courses</h2>
+        <p>Some of the subjects I'm exploring on my programming journey.</p>
+      </div>
+
+      <div class="course-grid">
+        <article class="card course-card">
+          <span class="course-number">01</span>
+          <h3>Data Structure</h3>
+          <p>Learning how to organize and work with data efficiently.</p>
+        </article>
+
+        <article class="card course-card">
+          <span class="course-number">02</span>
+          <h3>Java</h3>
+          <p>Practicing programming fundamentals and object-oriented code.</p>
+        </article>
+
+        <article class="card course-card">
+          <span class="course-number">03</span>
+          <h3>Algorithm</h3>
+          <p>Exploring step-by-step ways to solve programming problems.</p>
+        </article>
+
+        <article class="card course-card">
+          <span class="course-number">04</span>
+          <h3>Database</h3>
+          <p>Learning how information is stored, organized, and retrieved.</p>
+        </article>
+
+        <article class="card course-card">
+          <span class="course-number">05</span>
+          <h3>HTML &amp; CSS</h3>
+          <p>Building web pages and styling them for different screens.</p>
+        </article>
+
+        <article class="card course-card">
+          <span class="course-number">06</span>
+          <h3>Problem Solving</h3>
+          <p>Using logic and practice to break big challenges into small steps.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card feature-card">
+      <div>
+        <p class="eyebrow">My goal</p>
+        <h2>One project at a time</h2>
+        <p>
+          I want to keep improving my skills and use what I learn to create
+          useful applications.
+        </p>
+      </div>
+      <a class="btn" href="about.html">More About Me</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Ziad · 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

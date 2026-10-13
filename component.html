@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reusable components from Ziad's website.">
+  <title>Ziad | Components</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Ziad</a>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" aria-current="page" href="component.html">Components</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-control">
+      <input type="checkbox" id="theme-toggle">
+      <label for="theme-toggle">
+        <span class="switch" aria-hidden="true"></span>
+        <span>Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-heading">
+      <p class="eyebrow">Built for my website</p>
+      <h1>Component Library</h1>
+      <p>A few reusable pieces used across my pages.</p>
+    </section>
+
+    <section class="content-section" aria-labelledby="buttons-title">
+      <h2 id="buttons-title">Buttons</h2>
+      <div class="component-row">
+        <div>
+          <a class="btn" href="index.html">Primary button</a>
+          <p class="label">Default</p>
+        </div>
+        <div>
+          <a class="btn is-hover" href="index.html">Hover preview</a>
+          <p class="label">Hover state</p>
+        </div>
+        <div>
+          <button class="btn" type="button" disabled>Disabled</button>
+          <p class="label">Disabled state</p>
+        </div>
+        <div>
+          <a class="btn btn-outline" href="about.html">Outline button</a>
+          <p class="label">Secondary style</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="card-title">
+      <h2 id="card-title">Course Card</h2>
+      <article class="card sample-card">
+        <span class="course-number">MY COURSE</span>
+        <h3>Java</h3>
+        <p>I'm learning programming concepts and practicing with Java.</p>
+        <a class="btn" href="index.html#courses">See My Courses</a>
+      </article>
+    </section>
+
+    <section class="content-section" aria-labelledby="table-title">
+      <h2 id="table-title">Courses Table</h2>
+      <p class="label">On small screens, scroll the table horizontally.</p>
+
+      <div class="table-wrap" role="region" aria-label="Course list" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data Structure</td>
+              <td>Organizing data</td>
+              <td><span class="badge">Learning</span></td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>Programming</td>
+              <td><span class="badge">Learning</span></td>
+            </tr>
+            <tr>
+              <td>Algorithm</td>
+              <td>Problem solving</td>
+              <td><span class="badge">Learning</span></td>
+            </tr>
+            <tr>
+              <td>Database</td>
+              <td>Managing information</td>
+              <td><span class="badge badge-planned">Up next</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Ziad's Component Library</p>
+    </div>
+  </footer>
+</body>
+</html>
