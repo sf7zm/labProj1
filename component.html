@@ -32,7 +32,7 @@
     <section class="page-heading">
       <p class="eyebrow">Built for my website</p>
       <h1>Component Library</h1>
-      <p>A few reusable pieces used across my pages.</p>
+      <p>Reusable buttons, form elements, alerts, and a CSS-only modal.</p>
     </section>
 
     <section class="content-section" aria-labelledby="buttons-title">
@@ -57,6 +57,93 @@
       </div>
     </section>
 
+    <section class="content-section" aria-labelledby="form-title">
+      <h2 id="form-title">Form Elements</h2>
+
+      <form class="form-card" action="#" method="get">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Enter your name"
+            required>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="name@example.com"
+            required>
+        </div>
+
+        <div class="form-field">
+          <label for="course">Choose a course</label>
+          <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="java">Java</option>
+            <option value="html-css">HTML &amp; CSS</option>
+            <option value="algorithms">Algorithms</option>
+            <option value="databases">Databases</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message"></textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="content-section" aria-labelledby="alert-title">
+      <h2 id="alert-title">Alerts / Notifications</h2>
+
+      <div class="alert alert-success" role="status">
+        <strong>Success:</strong> Your changes have been saved.
+      </div>
+
+      <div class="alert alert-info" role="status">
+        <strong>Note:</strong> This is an example information message.
+      </div>
+
+      <div class="alert alert-warning" role="alert">
+        <strong>Warning:</strong> Please check your information before continuing.
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="modal-title">
+      <h2 id="modal-title">CSS-only Modal Window</h2>
+      <p>Open the modal using the button. It uses CSS and the URL fragment only.</p>
+
+      <a class="btn" href="#demo-modal">Open modal</a>
+
+      <div class="modal" id="demo-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+        <div class="modal-backdrop">
+          <div class="modal-content">
+            <a class="modal-close" href="#" aria-label="Close modal">×</a>
+            <h3 id="modal-heading">Hello!</h3>
+            <p>
+              This modal opens and closes with CSS using the <code>:target</code>
+              selector. It does not use JavaScript.
+            </p>
+            <a class="btn" href="#">Close</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="content-section" aria-labelledby="card-title">
       <h2 id="card-title">Course Card</h2>
       <article class="card sample-card">
@@ -65,45 +152,6 @@
         <p>I'm learning programming concepts and practicing with Java.</p>
         <a class="btn" href="index.html#courses">See My Courses</a>
       </article>
-    </section>
-
-    <section class="content-section" aria-labelledby="table-title">
-      <h2 id="table-title">Courses Table</h2>
-      <p class="label">On small screens, scroll the table horizontally.</p>
-
-      <div class="table-wrap" role="region" aria-label="Course list" tabindex="0">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Course</th>
-              <th scope="col">Topic</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Data Structure</td>
-              <td>Organizing data</td>
-              <td><span class="badge">Learning</span></td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td>Programming</td>
-              <td><span class="badge">Learning</span></td>
-            </tr>
-            <tr>
-              <td>Algorithm</td>
-              <td>Problem solving</td>
-              <td><span class="badge">Learning</span></td>
-            </tr>
-            <tr>
-              <td>Database</td>
-              <td>Managing information</td>
-              <td><span class="badge badge-planned">Up next</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </section>
   </main>
 
